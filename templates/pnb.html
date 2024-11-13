@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Coin
+{% endblock %}
+
+{% block main %}
+
+
+<section class="module" id="w">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h4 class="font-serif mb-30">Who ARe You? </h4>
+          <!-- <h4 style ="color: chartreuse;" class="font-alt mb-30"> {{status}}</h4> -->
+
+
+
+
+
+          <h6 class="font-serif"><span class="icon-tools-2"></span> Pinky
+          </h6>
+          <div class="progress">
+            <div class="progress-bar pb-dark" aria-valuenow= {{pcount}} role="progressbar" aria-valuemin="0" aria-valuemax="100"><span class="font-alt"></span></div>
+          </div>
+          <h6 class="font-serif"><span class="icon-strategy"></span> Brain
+          </h6>
+          <div class="progress">
+            <div  class="progress-bar pb-dark" aria-valuenow={{bcount}} role="progressbar" aria-valuemin="0" aria-valuemax="100"><span class="font-alt"></span></div>
+          </div>
+          <h6 class="font-serif"><span class="icon-target"></span> Pinky and Brain
+          </h6>
+          <div class="progress">
+            <div class="progress-bar pb-dark" aria-valuenow={{pnbcount}} role="progressbar" aria-valuemin="0" aria-valuemax="100"><span class="font-alt"></span></div>
+          </div>
+
+
+    </div>
+  </section>
+
+{% endblock %}
